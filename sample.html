@@ -71,7 +71,7 @@
    
     </form>
 
-    <button id="submitBtn" type="button">Submit</button>
+    <button onclick="myFunction()" id="submitBtn" type="button">Submit</button>
 
     <button id="resetBtn" type="button">Reset</button>
 
@@ -86,6 +86,15 @@
 <div style="text-align: center; ">
     <a style="color: white;" href="https://www.w3schools.com" target="_blank">Click Here</a>
   </div>
+
+  <script>
+    function myFunction() {
+        document.getElementById("submitBtn").innerHTML = "Submitted";
+        document.getElementById("submitBtn").disabled = true;
+        alert("Form Submitted Successfully!");
+    }
+
+    </script>
   
 </div>
 </body>
